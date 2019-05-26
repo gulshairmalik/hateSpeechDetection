@@ -16,7 +16,7 @@ To run the project make sure you have following things installed:
   - [Install Python Django Framework](https://docs.djangoproject.com/en/2.2/topics/install/#installing-official-release)
   - [Install Django cors-headers](https://pypi.org/project/django-cors-headers/)
 - Python3 Libraries:
-  - ** Install Libraries with pip install LIBRARY_NAME **
+  - **Install Libraries with pip install LIBRARY_NAME**
   - gensim
   - pyfasttext==0.4.6
   - xlsxwriter==1.1.2
