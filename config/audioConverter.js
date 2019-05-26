@@ -1,12 +1,15 @@
 const spawn = require('child_process').spawn;
 const recognize = require('../config/speechRecognition.js')
+const path = require('path');
+
+
 exports.audiConverter = function (fileName,fileNameWithoutExt){
 
-            
+    //Current Directory path from root
+    let appDir = path.dirname(require.main.filename);
 
     var cmd = 'ffmpeg';
-
-    var pathToSave = "/media/gulshair/AE98361E9835E58D/Development/FYP/hateSpeechDetection/";
+    var pathToSave = appDir;
 
 
     var args = [
@@ -15,7 +18,7 @@ exports.audiConverter = function (fileName,fileNameWithoutExt){
         '-acodec' , 'pcm_s16le', 
         '-ac', '1',
         '-ar', '16000', 
-        '-f', 'wav', pathToSave+'uploads/'+fileNameWithoutExt+'.wav'
+        '-f', 'wav', pathToSave+'/uploads/'+fileNameWithoutExt+'.wav'
     ];
 
     var proc = spawn(cmd, args);

@@ -3,11 +3,14 @@ const convert = require('../config/audioConverter.js');
 const spawn = require('child_process').spawn;
 const getYouTubeID = require('get-youtube-id');
 const fs = require('fs');
+const path = require('path');
 
 //ytdl http://www.youtube.com/watch?v=_HSylqgVYQI | ffmpeg -i pipe:0 -b:a 192K -vn myfile.mp3
 
 exports.getAudio = function(req,res){
 
+    //Current Directory path from root
+    let appDir = path.dirname(require.main.filename);
 
     // stream = ytdl(url)
 
@@ -17,7 +20,7 @@ exports.getAudio = function(req,res){
 
     // });
 
-    var pathToSave = "/media/gulshair/AE98361E9835E58D/Development/FYP/hateSpeechDetection/youtubemp3/";
+    var pathToSave = appDir+"/youtubemp3/";
     var vid = getYouTubeID(req.body.url);
     //console.log(id);
     var cmd2 = spawn('ytdl',[req.body.url]);
