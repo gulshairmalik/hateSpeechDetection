@@ -1,0 +1,79 @@
+extends layouts/header.pug
+
+block content
+    .container
+        .jumbotron
+            h1.text-center Hate Speech Detection
+        .row
+            .col-md-6  
+                h2  Upload a File:
+                br
+                form.form-inline(action='/text' method='POST' enctype="multipart/form-data")
+                    .col-md-8
+                        input#customFile(type='file' name='file' required)
+                    .col-md-3
+                        button.btn.btn-primary(type='submit',style="border-radius:8px;outline:none;") Submit
+            .col-md-6
+                h2  Record Audio:
+                br
+                .row
+                    .col-md-6
+                        button#record.btn.btn-danger(name='record',style="border-radius:8px;outline:none;") Record
+                            //i.fas.fa-microphone
+                    .col-md-6
+                        h5#timer.col-md-offset-2.text-danger(style="font-size:25px;") 00:00:00
+        p #{err ? 'File is not Uploaded' : ''}
+        h4#invalidFile.text-danger #{error ? error : ''}
+            //- .col-md-4
+            //-     h3 Youtube vedio Link:
+            //-     br
+            //-     .row
+            //-         .col-md-6
+            //-             input#texturl.form-control(type='text' required)
+            //-         .col-md-6
+            //-             button#btnurl.btn.btn-danger(type='button')
+            //-                 i.fab.fa-youtube
+
+
+        br
+        textarea#textarea.form-control(rows="3" style="font-size:25px;")= text
+        h4#err.text-danger
+        br
+        .row
+            .col-md-4
+                button#detect.btn.btn-danger(style="border-radius:8px;outline:none;") Detect
+            .col-md-2
+                button#clear.btn.btn-success(style="border-radius:8px;outline:none;") Clear
+        br
+        br
+        #results(style="display:none;")
+            h2 
+                strong Results:
+            .row 
+                .col-md-4
+                    .panel#panel3
+                        .panel-heading
+                            h3.panel-title 
+                                strong Offensive:
+                        .panel-body
+                            h3#offensive
+                .col-md-4
+                    .panel#panel1
+                        .panel-heading
+                            h3.panel-title 
+                                strong Hate Speech Category:
+                        .panel-body
+                            h3#category 
+                .col-md-4
+                    .panel#panel2
+                        .panel-heading
+                            h3.panel-title 
+                                strong Hate Speech Level:
+                        .panel-body
+                            h3#level
+
+        
+                    
+
+
+

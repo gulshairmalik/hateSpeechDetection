@@ -1,0 +1,28 @@
+{
+  "name": "mvc_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/speech": "^2.3.0",
+    "audio-decode": "^1.4.0",
+    "audio-loader": "^1.0.3",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "easytimer": "^1.1.1",
+    "express": "^4.16.4",
+    "express-fileupload": "^1.1.1-alpha.3",
+    "get-youtube-id": "^1.0.1",
+    "mongoose": "^5.4.16",
+    "mp3-to-wav": "^0.1.11",
+    "node-audiorecorder": "^1.4.0",
+    "node-lame": "^1.2.0",
+    "node-wav": "0.0.2",
+    "pug": "^2.0.3"
+  }
+}

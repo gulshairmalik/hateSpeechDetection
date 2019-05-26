@@ -1,0 +1,31 @@
+
+<script type="text/javascript">
+function displayclass()
+{
+document.getElementById("label").innerHTML={{predicted_label}};
+}
+</script>
+
+    <br /><br />
+    <form action="" method="post" id="myForm">  
+    {% csrf_token %} 
+        <label for="from">Input sentence</label>
+            <input type="text" name="sentence"><br /><br />
+        <!--<select name="modelname" id="m">
+            {% for m in models %}
+             <option value=''>{{m}}</option>
+             {% endfor %}
+        </select>-->
+        <!--<select name="m" id="m">
+  		<option value="SVM">SVM</option>
+  		<option value="LR">LR</option>
+  		<option value="CNN">CNN</option>
+  		<option value="LSTM">LSTM</option>
+	</select>-->
+        <input type="submit" value="Classify"  />
+        <input type="text" value={{hate_label}} />
+        <input type="text" value={{hate_level}} />
+        
+       
+    </form>
+

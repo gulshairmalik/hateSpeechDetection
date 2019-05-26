@@ -1,0 +1,28 @@
+Number of data-points ,7251
+Number of labels ,4
+Accuracy ,92.27692732036961%
+
+Label ,Hate Speech Ethnicity
+F-score  ,48.888888888888886%
+Precision  ,38.19444444444444%
+Recall  ,67.90123456790124%
+TP ,55,FP ,89,TN ,7081,FN ,26
+
+Label ,Hate Speech National Origin
+F-score  ,65.55555555555556%
+Precision  ,61.13989637305699%
+Recall  ,70.65868263473054%
+TP ,118,FP ,75,TN ,7009,FN ,49
+
+Label ,Hate Speech Religion
+F-score  ,72.43963363863448%
+Precision  ,69.15739268680446%
+Recall  ,76.04895104895105%
+TP ,435,FP ,194,TN ,6485,FN ,137
+
+Label ,Not Hate Speech
+F-score  ,95.67474048442907%
+Precision  ,96.7859984089101%
+Recall  ,94.58871093142591%
+TP ,6083,FP ,202,TN ,618,FN ,348
+

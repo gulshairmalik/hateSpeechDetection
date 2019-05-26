@@ -1,0 +1,16 @@
+Number of data-points ,7251
+Number of labels ,2
+Accuracy ,84.0159977934078%
+
+Label ,nonoffensive
+F-score  ,79.66309878926127%
+Precision  ,74.11034933072152%
+Recall  ,86.11532625189682%
+TP ,2270,FP ,793,TN ,3822,FN ,366
+
+Label ,offensive
+F-score  ,86.83403385209587%
+Precision  ,91.26074498567334%
+Recall  ,82.8169014084507%
+TP ,3822,FP ,366,TN ,2270,FN ,793
+
