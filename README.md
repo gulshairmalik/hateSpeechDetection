@@ -12,6 +12,9 @@ To run the project make sure you have following things installed:
 
 - FFMPEG
   - [Install ffmpeg (Linux)](https://linuxize.com/post/how-to-install-ffmpeg-on-ubuntu-18-04/) 
+  
+- YTDL
+  - [Install YTDL)](https://www.npmjs.com/package/ytdl) 
 
 - SOX
   - Install SOX on linux with ```sudo apt-get install sox libsox-fmt-all```
