@@ -18,7 +18,7 @@
     "express": "^4.16.4",
     "express-fileupload": "^1.1.1-alpha.3",
     "get-youtube-id": "^1.0.1",
-    "mongoose": "^5.4.16",
+    "mongoose": "^5.7.5",
     "mp3-to-wav": "^0.1.11",
     "node-audiorecorder": "^1.4.0",
     "node-lame": "^1.2.0",
