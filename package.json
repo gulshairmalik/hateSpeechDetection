@@ -23,6 +23,6 @@
     "node-audiorecorder": "^1.4.0",
     "node-lame": "^1.2.0",
     "node-wav": "0.0.2",
-    "pug": "^2.0.3"
+    "pug": "^3.0.1"
   }
 }
