@@ -15,7 +15,7 @@
     "body-parser": "^1.18.3",
     "cors": "^2.8.5",
     "easytimer": "^1.1.1",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "express-fileupload": "^1.1.1-alpha.3",
     "get-youtube-id": "^1.0.1",
     "mongoose": "^5.4.16",
